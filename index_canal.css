@@ -1,0 +1,201 @@
+
+@font-face {
+    font-family: "Jura_Med";
+    src: url(./fonts/Jura/Jura-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Jura_Bold";
+    src: url(./fonts/Jura/Jura-Bold.ttf);
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #000C20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header .center {
+    text-align: center;
+}
+
+.myblog{
+    color: white;
+    font-family: "Jura_Med";
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.search-input {
+    width: 50vw;
+    height: 4vh;
+    border: 2px solid white;
+    border-radius: 13px;
+    background-color: #1E1156;
+    font-size: 16px;
+    color: white;
+    font-family: "Jura_Med";
+    padding-left: 10px;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0 0 7px blue;
+}
+
+.account{
+    text-decoration: none;
+}
+
+main{
+    background-color: #050213;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.spisok{
+    background-color: #0F0C29;
+    position: sticky;
+    width: 20vw;
+    height: 90vh;
+}
+
+.ul{
+    list-style: none;
+    font-family: "Jura_Med";
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.li{
+    padding-bottom: 10px;
+}
+
+.sylka{
+    text-decoration: none;
+    color: white;
+}
+
+.sylka:hover{
+    color: #4a2bd4;
+}
+
+.sylka:active{
+    color: #1E1156;
+}
+
+.ul_bottom{
+    list-style: none;
+    font-family: "Jura_Med";
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    top: 34vh;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.channel_info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.banner{
+    margin-left: 5vw;
+    width: 70vw;
+    height: 25vh;
+    border-radius: 15px;
+}
+
+.channel_name{
+    font-family: "Jura_Med";
+    color: white;
+    margin-bottom: 5px;
+}
+
+.channel{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+}
+
+.info{
+    font-family: "Jura_Med";
+    color: white;
+    margin: 2px;
+    margin-bottom: 25px;
+}
+
+.logo{
+    width: 15%;
+}
+
+.toggle-button {
+    display: none; /* Скрываем оригинальный input */
+}
+
+.button {
+    padding: 10px 20px;
+    font-family: "Jura_Med";
+    font-size: 16px;
+    color: white;
+    background-color: #1E1156;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:checked + .button {
+    background-color: #373363; /* Изменяем цвет при нажатии */
+    box-shadow: 0 0 4px blue;
+}
+
+.toggle-button:checked + .button::after {
+    content: "Вы подписаны"; /* Изменяем текст при нажатии */
+}
+
+.button::after {
+    content: "Подписаться"; /* Изначальный текст */
+}
+
+.videos{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.h3_video{
+    font-family: "Jura_Med";
+    color: white;
+}
+
+.h3_video::after{
+    content: ':(';
+    color: white;
+}
