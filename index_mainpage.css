@@ -12,6 +12,7 @@
 body{
     margin: 0;
     overflow-x: hidden;
+    background-color: #050213;
 }
 
 header{
@@ -152,4 +153,8 @@ main{
     color: white;
     font-size: 10px;
     margin-top: 8px;
+}
+
+footer{
+    background-color: #050213;
 }

@@ -12,6 +12,7 @@
 body{
     margin: 0;
     overflow-x: hidden;
+    background-color: #050213;
 }
 
 header{
@@ -198,4 +199,8 @@ main{
 .h3_video::after{
     content: ':(';
     color: white;
+}
+
+footer{
+    background-color: #050213;
 }
