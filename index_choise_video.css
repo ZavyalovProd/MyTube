@@ -188,7 +188,7 @@ footer {
 }
 
 .toggle-button:checked + .button {
-    background-color: #373363; /* Изменяем цвет при нажатии */
+    background-color: #2c4691; /* Изменяем цвет при нажатии */
     box-shadow: 0 0 4px blue;
 }
 
