@@ -19,7 +19,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px; /* Отступы */
+    padding: 10px 20px;
+}
+
+.header .center {
+    text-align: center;
 }
 
 .myblog {
@@ -31,17 +35,16 @@ header {
 }
 
 .search-input {
-    width: 50vw; /* Занимает 50% ширины экрана */
+    width: 50vw;
     max-width: 400px; /* Максимальная ширина для ввода */
     height: 4vh;
     border: 2px solid white;
     border-radius: 13px;
-    background-color: #1E1156;
+    background-color: #061e42;
     font-size: 16px;
     color: white;
     font-family: "Jura_Med";
     padding-left: 10px;
-    margin-top: 10px; /* Отступ сверху */
 }
 
 .search-input:focus {
@@ -89,12 +92,12 @@ header {
 }
 
 .opisaney_over::-webkit-scrollbar {
-    background-color: #1E1156;
+    background-color: #061e42;
     border-radius: 10px;
 }
 
 .opisaney_over::-webkit-scrollbar-track {
-    background-color: #1E1156;
+    background-color: #061e42;
     border-radius: 10px;
 }
 
@@ -113,7 +116,7 @@ header {
 }
 
 .footer {
-    background-color: #0B000F;
+    background-color: #050213;
     flex-direction: column;
     justify-content: center;
     padding-top: vh;
@@ -125,7 +128,7 @@ header {
     font-size: 20px;
     text-align: center;
     margin-top: 0;
-    background-color: #1E1156;
+    background-color: #061e42;
     padding: 10px 15px;
     border-radius: 10px;
     font-weight: lighter;
@@ -150,11 +153,11 @@ header {
 }
 
 .morevideo::-webkit-scrollbar {
-    background-color: #1E1156;
+    background-color: #061e42;
 }
 
 .morevideo::-webkit-scrollbar-track {
-    background-color: #1E1156;
+    background-color: #061e42;
 }
 
 .morevideo::-webkit-scrollbar-thumb {
@@ -177,7 +180,7 @@ footer {
     font-family: "Jura_Med";
     font-size: 16px;
     color: white;
-    background-color: #1E1156;
+    background-color: #061e42;
     border: none;
     border-radius: 5px;
     cursor: pointer;

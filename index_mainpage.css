@@ -40,7 +40,7 @@ header {
     height: 4vh;
     border: 2px solid white;
     border-radius: 13px;
-    background-color: rgb(30, 17, 86);
+    background-color: #061e42;
     font-size: 16px;
     color: white;
     font-family: "Jura_Med";
@@ -66,7 +66,8 @@ main {
 }
 
 .spisok {
-    background-color: #0F0C29;
+    background-color: #061e42;
+    max-width: 220px;
     position: sticky;
     top: 0; /* Фиксация верхней части */
     width: 20vw;
@@ -94,11 +95,11 @@ main {
 }
 
 .sylka:hover {
-    color: #4a2bd4;
+    color: #5481ff;
 }
 
 .sylka:active {
-    color: #1E1156;
+    color: #275aa5;
 }
 
 .ul_bottom {
@@ -108,7 +109,7 @@ main {
     font-size: 20px;
     text-align: left;
     position: relative;
-    top: 34vh;
+    top: 39vh;
     padding: 0;
     padding-left: 10px;
 }
