@@ -1,206 +1,325 @@
+@font-face {
+  font-family: "Jura_Med";
+  src: url(./fonts/Jura/Jura-Medium.ttf);
+}
 
 @font-face {
-    font-family: "Jura_Med";
-    src: url(./fonts/Jura/Jura-Medium.ttf);
+  font-family: "Jura_Bold";
+  src: url(./fonts/Jura/Jura-Bold.ttf);
 }
 
-@font-face {
-    font-family: "Jura_Bold";
-    src: url(./fonts/Jura/Jura-Bold.ttf);
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #050213;
 }
 
-body{
-    margin: 0;
-    overflow-x: hidden;
-    background-color: #050213;
+header {
+  background-color: #000c20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-header{
+header {
     background-color: #000c20;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-}
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    padding: 10px 5px; /* Уменьшено обрамление для компактности */
+    width: 100%; /* Задает ширину 100% для адаптивности */
+    box-sizing: border-box; /* Учитывает отступы в ширине */
 }
 
 .header .center {
+    flex-grow: 1; /* Позволяет центральному блоку занимать оставшееся пространство */
     text-align: center;
 }
 
-.myblog{
-    color: white;
-    font-family: "Jura_Med";
-    font-size: 20px;
-    text-decoration: none;
-    cursor: pointer;
+.myblog {
+  color: white;
+  font-family: "Jura_Med";
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-
 .search-input {
-    width: 50vw;
-    height: 4vh;
-    border: 2px solid white;
-    border-radius: 13px;
-    background-color: #1E1156;
-    font-size: 16px;
-    color: white;
-    font-family: "Jura_Med";
-    padding-left: 10px;
+  width: 50vw;
+  height: 4vh;
+  border: 2px solid white;
+  border-radius: 13px;
+  background-color: #1e1156;
+  font-size: 16px;
+  color: white;
+  font-family: "Jura_Med";
+  padding-left: 10px;
 }
 
 .search-input:focus {
-    outline: none;
-    box-shadow: 0 0 7px blue;
+  outline: none;
+  box-shadow: 0 0 7px blue;
 }
 
-.account{
-    text-decoration: none;
+.account {
+  text-decoration: none;
 }
 
-main{
-    background-color: #050213;
+main {
+  background-color: #050213;
 }
 
-.main{
-    display: flex;
-    flex-direction: row;
+.main {
+  display: flex;
+  flex-direction: row;
 }
 
-.spisok{
-    background-color: #0F0C29;
-    position: sticky;
-    width: 20vw;
-    height: 90vh;
+.spisok {
+  background-color: #0f0c29;
+  position: sticky;
+  width: 20vw;
+  height: 90vh;
 }
 
-.ul{
-    list-style: none;
-    font-family: "Jura_Med";
-    color: white;
-    font-size: 20px;
-    text-align: left;
-    border-bottom: 1px solid white;
-    padding: 0;
-    padding-left: 10px;
+.ul {
+  list-style: none;
+  font-family: "Jura_Med";
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  border-bottom: 1px solid white;
+  padding: 0;
+  padding-left: 10px;
 }
 
-.li{
-    padding-bottom: 10px;
+.li {
+  padding-bottom: 10px;
 }
 
-.sylka{
-    text-decoration: none;
-    color: white;
+.sylka {
+  text-decoration: none;
+  color: white;
 }
 
-.sylka:hover{
-    color: #4a2bd4;
+.sylka:hover {
+  color: #4a2bd4;
 }
 
-.sylka:active{
-    color: #1E1156;
+.sylka:active {
+  color: #1e1156;
 }
 
-.ul_bottom{
-    list-style: none;
-    font-family: "Jura_Med";
-    color: white;
-    font-size: 20px;
-    text-align: left;
-    position: relative;
-    top: 34vh;
-    padding: 0;
-    padding-left: 10px;
+.ul_bottom {
+  list-style: none;
+  font-family: "Jura_Med";
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  position: relative;
+  top: 34vh;
+  padding: 0;
+  padding-left: 10px;
 }
 
-.channel_info{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+.channel_info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
-.banner{
-    margin-left: 5vw;
-    width: 70vw;
-    height: 25vh;
+.channel_name {
+  font-family: "Jura_Med";
+  color: white;
+  margin-bottom: 5px;
+}
+
+.channel {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2vw;
+  margin-bottom: 15px;
+}
+
+.info {
+  font-family: "Jura_Med";
+  color: white;
+  margin: 2px;
+  margin-bottom: 25px;
+}
+
+.logo {
+    height: 100px; /* Фиксированная высота */
+    width: auto; /* Ширина автоматически подстраивается */
+}
+
+.banner {
+    max-width: 98%; /* Максимальная ширина 90% от родителя */
     border-radius: 15px;
+    height: auto; /* Высота автоматически подстраивается */
+    max-height: 250px; /* Ограничение максимальной высоты */
+    display: block; /* Делаем элемент блочным для центровки */
+    margin: 0 auto; /* Центрируем по горизонтали */
+    object-fit: cover; /* Обеспечивает правильное отображение изображения */
 }
 
-.channel_name{
-    font-family: "Jura_Med";
-    color: white;
-    margin-bottom: 5px;
-}
-
-.channel{
-    display: flex;
-    flex-direction: row;
-    margin-left: 5vw;
-}
-
-.info{
-    font-family: "Jura_Med";
-    color: white;
-    margin: 2px;
-    margin-bottom: 25px;
-}
-
-.logo{
-    width: 15%;
-}
 
 .toggle-button {
-    display: none; /* Скрываем оригинальный input */
+  display: none; /* Скрываем оригинальный input */
 }
 
 .button {
-    padding: 10px 20px;
-    font-family: "Jura_Med";
-    font-size: 16px;
-    color: white;
-    background-color: #1E1156;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  font-family: "Jura_Med";
+  font-size: 16px;
+  color: white;
+  background-color: #1e1156;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .toggle-button:checked + .button {
-    background-color: #373363; /* Изменяем цвет при нажатии */
-    box-shadow: 0 0 4px blue;
+  background-color: #373363; /* Изменяем цвет при нажатии */
+  box-shadow: 0 0 4px blue;
 }
 
 .toggle-button:checked + .button::after {
-    content: "Вы подписаны"; /* Изменяем текст при нажатии */
+  content: "Вы подписаны"; /* Изменяем текст при нажатии */
 }
 
 .button::after {
-    content: "Подписаться"; /* Изначальный текст */
+  content: "Подписаться"; /* Изначальный текст */
 }
 
-.videos{
+.main_channel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.main_video {
+  width: 35vw;
+  height: 45vh;
+  border-radius: 15px;
+}
+
+footer {
+  background-color: #050213;
+}
+
+.main_video_on_channel {
+  display: flex;
+  gap: 2vw;
+  margin: 0;
+  padding: 10px;
+  margin-left: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.main_video_name {
+  font-family: "Jura_Med";
+  color: white;
+  margin: 0;
+}
+
+.kratkoe_pro_video {
+  display: flex;
+  flex-direction: column;
+}
+
+.prosmotry {
+  color: gray;
+  font-family: "Jura_Med";
+  margin: 0;
+  margin-top: 10px;
+}
+
+.opisanie_kratkoe {
+  white-space: pre;
+  color: white;
+  font-family: "Jura_Med";
+  text-decoration: none;
+  margin: 0;
+}
+
+.grid_video {
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Три колонки фиксированной ширины */
+  gap: 20px; /* Отступ между карточками */
+}
+
+.img_card {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card {
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card_h2 {
+  font-family: "Jura_Med";
+  color: white;
+  font-size: 17px;
+  margin: 0;
+}
+
+.card_p {
+  font-family: "Jura_Med";
+  color: white;
+  font-size: 10px;
+  margin-top: 8px;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .spisok {
+    width: 100%;
+    height: auto;
+  }
+
+  .grid_video {
+    grid-template-columns: 1fr; /* Одна колонка */
+  }
+
+  .ul {
+    display: none;
+  }
+
+  .ul_bottom {
+    display: none; /* Скрыть "О нас" и кнопки */
+  }
+
+  .main_video_on_channel {
     display: flex;
-    justify-content: center;
-    margin: auto;
-}
+    flex-direction: column;
+  }
 
-.h3_video{
-    font-family: "Jura_Med";
-    color: white;
-}
+  .opisanie_kratkoe {
+    display: none;
+  }
 
-.h3_video::after{
-    content: ':(';
-    color: white;
-}
+  .banner {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+  }
 
-footer{
-    background-color: #050213;
+  .main_video {
+    width: 90%;
+    height: auto;
+  }
 }

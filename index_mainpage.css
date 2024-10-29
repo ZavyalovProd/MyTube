@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "Jura_Med";
     src: url(./fonts/Jura/Jura-Medium.ttf);
@@ -9,21 +8,14 @@
     src: url(./fonts/Jura/Jura-Bold.ttf);
 }
 
-body{
+body {
     margin: 0;
     overflow-x: hidden;
     background-color: #050213;
 }
 
-header{
+header {
     background-color: #000C20;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +26,7 @@ header{
     text-align: center;
 }
 
-.myblog{
+.myblog {
     color: white;
     font-family: "Jura_Med";
     font-size: 20px;
@@ -42,9 +34,9 @@ header{
     cursor: pointer;
 }
 
-
 .search-input {
     width: 50vw;
+    max-width: 400px; /* Максимальная ширина для ввода */
     height: 4vh;
     border: 2px solid white;
     border-radius: 13px;
@@ -60,27 +52,28 @@ header{
     box-shadow: 0 0 7px blue;
 }
 
-.account{
+.account {
     text-decoration: none;
 }
 
-main{
+main {
     background-color: #050213;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: row;
 }
 
-.spisok{
+.spisok {
     background-color: #0F0C29;
     position: sticky;
+    top: 0; /* Фиксация верхней части */
     width: 20vw;
     height: 90vh;
 }
 
-.ul{
+.ul {
     list-style: none;
     font-family: "Jura_Med";
     color: white;
@@ -91,24 +84,24 @@ main{
     padding-left: 10px;
 }
 
-.li{
+.li {
     padding-bottom: 10px;
 }
 
-.sylka{
+.sylka {
     text-decoration: none;
     color: white;
 }
 
-.sylka:hover{
+.sylka:hover {
     color: #4a2bd4;
 }
 
-.sylka:active{
+.sylka:active {
     color: #1E1156;
 }
 
-.ul_bottom{
+.ul_bottom {
     list-style: none;
     font-family: "Jura_Med";
     color: white;
@@ -120,42 +113,80 @@ main{
     padding-left: 10px;
 }
 
-.grid_video{
+.grid_video {
     display: grid;
     padding-top: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки фиксированной ширины */
+    gap: 20px; /* Отступ между карточками */
 }
 
-.img_card{
+.img_card {
     width: 100%;
     border-radius: 15px;
 }
 
-.card{
-    width: 90%;
-    height: 80%;
-    padding-left: 15px;
-    transition: 1s;
+.card {
+    padding: 15px;
+    transition: transform 0.3s;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.03);
 }
 
-.card_h2{
+.card_h2 {
     font-family: "Jura_Med";
     color: white;
     font-size: 17px;
     margin: 0;
 }
 
-.card_p{
+.card_p {
     font-family: "Jura_Med";
     color: white;
     font-size: 10px;
     margin-top: 8px;
 }
 
-footer{
+footer {
     background-color: #050213;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myblog, .account {
+        margin-bottom: 10px;
+    }
+
+    .search-input {
+        width: 90vw; /* Увеличение ширины для маленьких экранов */
+    }
+
+    .spisok {
+        display: none; /* Скрытие бокового меню на маленьких экранах */
+    }
+
+    .grid_video {
+        grid-template-columns: repeat(2, 1fr); /* Две колонки для экранов меньше 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        font-size: 14px;
+        height: 3vh;
+    }
+
+    .card_h2, .card_p {
+        font-size: 14px;
+    }
+
+    .grid_video {
+        grid-template-columns: 1fr; /* Один столбец для самых маленьких экранов */
+    }
 }
