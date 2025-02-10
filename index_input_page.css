@@ -88,7 +88,7 @@ main {
     position: sticky;
     top: 0; /* Фиксация верхней части */
     width: 20vw;
-    height: 90vh;
+    height: 100vh;
 }
 
 .ul {
@@ -126,30 +126,41 @@ main {
     font-size: 20px;
     text-align: left;
     position: relative;
-    top: 39vh;
+    top: 50vh;
     padding: 0;
     padding-left: 10px;
 }
 
 .grid_video {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding-top: 20px;
-    grid-template-columns: repeat(3, 1fr); /* Три колонки фиксированной ширины */
     gap: 20px; /* Отступ между карточками */
 }
 
 .img_card {
     width: 100%;
     border-radius: 15px;
+
+}
+
+.card__link{
+    width: 500px;
 }
 
 .card {
     padding: 15px;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-left: 30px;
 }
 
-.card:hover {
-    transform: scale(1.03);
+.video_description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
 }
 
 .card_h2 {
@@ -162,7 +173,7 @@ main {
 .card_p {
     font-family: "Jura_Med";
     color: white;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 8px;
 }
 
@@ -189,8 +200,8 @@ footer {
         display: none; /* Скрытие бокового меню на маленьких экранах */
     }
 
-    .grid_video {
-        grid-template-columns: repeat(2, 1fr); /* Две колонки для экранов меньше 768px */
+    .card {
+        flex-direction: column;
     }
 }
 

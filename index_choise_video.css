@@ -26,6 +26,10 @@ header {
     text-align: center;
 }
 
+.center{
+    display: flex;
+}
+
 .myblog {
     color: white;
     font-family: "Jura_Med";
@@ -50,6 +54,19 @@ header {
 .search-input:focus {
     outline: none;
     box-shadow: 0 0 7px blue;
+}
+
+.input_button{
+    background-image: url(/img/icons8-лупа-ios-17-outlined/icons8-лупа-100.png);
+    background-color: #000C20;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 5px;
 }
 
 .account {
@@ -132,6 +149,10 @@ header {
     padding: 10px 15px;
     border-radius: 10px;
     font-weight: lighter;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
 }
 
 .More_Video_H3:hover {
@@ -148,7 +169,7 @@ header {
     height: 200px;
     overflow: hidden;
     overflow-x: scroll;
-    display: flex;
+    display: none;
     flex-direction: row;
 }
 
