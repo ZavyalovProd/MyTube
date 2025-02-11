@@ -335,10 +335,11 @@ footer {
 
 @media (max-width: 480px) {
   .search-input {
-      font-size: 14px;
-      height: 3vh;
-      margin: 10px;
-      padding: 5px;
+    font-size: 14px;
+    height: 3vh;
+    width: 100vw;
+    margin: 10px;
+    padding: 5px;
   }
 
   .account{

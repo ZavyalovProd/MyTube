@@ -141,7 +141,6 @@ main {
 .img_card {
     width: 100%;
     border-radius: 15px;
-
 }
 
 .card__link{
@@ -231,5 +230,12 @@ footer {
 
     .grid_video {
         grid-template-columns: 1fr; /* Один столбец для самых маленьких экранов */
+    }
+
+    .card {
+        padding: 15px;
+        transition: transform 0.3s;
+        display:block;
+        margin-left: 0;
     }
 }
