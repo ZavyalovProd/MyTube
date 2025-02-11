@@ -345,5 +345,18 @@ footer {
       display: flex;
       padding-left: 17px;
   }
+
+  .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
