@@ -198,6 +198,20 @@ footer {
     .search-input {
         font-size: 14px;
         height: 3vh;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .account{
+        display: flex;
+        padding-left: 17px;
+    }
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .card_h2, .card_p {
